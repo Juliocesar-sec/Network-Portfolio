@@ -8,14 +8,14 @@ A lightweight utility that transforms technical UFW (Uncomplicated Firewall) log
 ***✨ What does this script do?***
 
 The UFW Color Log automates the configuration of detailed system logging and creates a smart alias that filters and colors terminal output according to event severity:
-
+```
 -🔴 Red: Intrusion attempts, blocked packets (BLOCK, DENIED, DROP).
 -🚨 Critical Alert: Highlights attempts on sensitive ports (SSH, RDP, FTP, SQL).
 -🔵 Blue: Successfully allowed connections (ALLOW).
 -🟡 Yellow: Quick identification of source IPs (SRC).
 -⚪ Gray: Other kernel informational events.
 -🚀 How to install on your Debian/Ubuntu
-
+```
 Just follow the three steps below in your terminal:
 
 ***1. Clone and prepare***
