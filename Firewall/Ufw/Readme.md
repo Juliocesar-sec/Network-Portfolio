@@ -1,5 +1,5 @@
 
-### 🔥 UFW – Practical Guide (README)
+## 🔥 UFW – Practical Guide (README)
 
 📌 **What is UFW?**
 
