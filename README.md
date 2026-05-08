@@ -1,7 +1,8 @@
 # 🌐 IT Support & Network Technician Portfolio
 
 ---
- <Juliocesar-sec>
+
+ ## Juliocesar-sec
 
 Welcome to my professional portfolio repository.  
 This portfolio highlights my experience in IT Support, troubleshooting, networking, and technical operations using Google Workspace and Cisco technologies.
@@ -10,7 +11,8 @@ This portfolio highlights my experience in IT Support, troubleshooting, networki
 
 I am an IT Support and Network Technician with experience providing technical support, maintaining computer networks, troubleshooting connectivity issues, and supporting end users in business environments.
 
-💡 Passionate about:
+### 💡 Passionate about:
+
 - Solving technical problems
 - Improving network performance
 - Learning new technologies
@@ -20,7 +22,7 @@ I am an IT Support and Network Technician with experience providing technical su
 
 # 🛠️ Skills
 
-## IT Support
+### IT Support
 - Technical Troubleshooting
 - Hardware & Software Support
 - Operating System Installation
@@ -29,7 +31,7 @@ I am an IT Support and Network Technician with experience providing technical su
 - Help Desk Support
 - Google Workspace Administration
 
-## 🌐 Networking
+### 🌐 Networking
 - Cisco Networking Fundamentals
 - TCP/IP
 - VLAN Configuration
@@ -38,7 +40,7 @@ I am an IT Support and Network Technician with experience providing technical su
 - Wi-Fi Setup & Support
 - Basic Firewall Configuration
 
-## ⚙️ Tools & Technologies
+### ⚙️ Tools & Technologies
 - Cisco Packet Tracer
 - Google Workspace
 - Windows
@@ -56,7 +58,7 @@ I am an IT Support and Network Technician with experience providing technical su
 
 # 🚀 Projects
 
-## 🏢 Office Network Setup
+### 🏢 Office Network Setup
 Designed and configured a small office network with:
 - Router and switch configuration
 - VLAN setup
@@ -64,14 +66,14 @@ Designed and configured a small office network with:
 - Basic network security
 
 
-## 🖥️ IT Support Lab
+### 🖥️ IT Support Lab
 Performed:
 - Operating system installation
 - User support and troubleshooting
 - Printer and device configuration
 - System maintenance
 
-## 📡 Network Troubleshooting
+### 📡 Network Troubleshooting
 Diagnosed and resolved:
 - IP conflicts
 - DNS issues
