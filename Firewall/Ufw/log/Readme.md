@@ -14,8 +14,9 @@ The UFW Color Log automates the configuration of detailed system logging and cre
 -🔵 Blue: Successfully allowed connections (ALLOW).
 -🟡 Yellow: Quick identification of source IPs (SRC).
 -⚪ Gray: Other kernel informational events.
--🚀 How to install on your Debian/Ubuntu
 ```
+🚀 ***How to install on your Debian/Ubuntu***
+
 Just follow the three steps below in your terminal:
 
 ***1. Clone and prepare***
