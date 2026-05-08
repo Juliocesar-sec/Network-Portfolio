@@ -23,7 +23,7 @@ UFW works with simple rules:
 - **reject** → block and send a response  
 - **limit** → limit connections (anti brute-force)  
 
-## 🚀 Essential Commands
+# 🚀 Essential Commands
 
 **Enable the firewall:**
 
@@ -138,7 +138,7 @@ sudo ufw status numbered
 sudo ufw delete [number]
 ```
 
-## 📊 Logs
+# 📊 Logs
 
 **Enable logging:**
 
@@ -194,7 +194,7 @@ sudo ufw allow 1000:2000/tcp
 sudo ufw allow in on eth0 to any port 22
 ```
 
-### 🧾 Summary
+# 🧾 Summary
 
 UFW is ideal for:
 
