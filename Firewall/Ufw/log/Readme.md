@@ -1,11 +1,11 @@
 
 ## Ufw-colorlog
 
-🛡️ Advanced UFW Color Log
+***🛡️ Advanced UFW Color Log***
 
 A lightweight utility that transforms technical UFW (Uncomplicated Firewall) logs into a colorful, easy-to-audit real-time feed in your Debian/Ubuntu terminal.
 
-✨ What does this script do?
+***✨ What does this script do?***
 
 The UFW Color Log automates the configuration of detailed system logging and creates a smart alias that filters and colors terminal output according to event severity:
 
@@ -18,25 +18,25 @@ The UFW Color Log automates the configuration of detailed system logging and cre
 
 Just follow the three steps below in your terminal:
 
-1. Clone and prepare
+***1. Clone and prepare***
 ```bash
 git clone https://github.com/Juliocesar-sec/ufw-colorlog.git
 cd ufw-colorlog
 chmod +x ufw-colorlog.sh
 ```
-2. Run the installer
+***2. Run the installer***
 
 The script will enable full UFW logging, install the ccze colorizer, and configure the alias in your .bashrc.
 ```bash
 ./ufw-colorlog.sh
 ```
-3. Activate the changes
+***3. Activate the changes***
 
 To make the command work immediately in the current terminal session, run:
 ```bash
 source ~/.bashrc
 ```
-🛠️ How to use
+***🛠️ How to use***
 
 After installation, you no longer need long commands. Just type:
 ```bash
