@@ -180,8 +180,10 @@ No encryption (in older versions)
 Use over VPN
 Restrict by IP
 Enable encryption
-```
+
 * You can learn more about this lab here:
+  
+```
 https://github.com/Juliocesar-sec/cybersecurity-learning-portfolio/tree/main/labs/ssh-lab
 
 ```
@@ -200,9 +202,9 @@ Malware uploads
 
 Avoid → use SFTP instead
 Block public access
-
+```
 🔸 445/tcp – SMB (Highly Critical 🚨)
-
+```
 ### ⚠️ Risks:
 
 Ransomware (e.g., WannaCry)
@@ -213,9 +215,9 @@ Remote Code Execution (RCE)
 # ❌ Never expose to the internet
 
 Allow only on internal networks
-
+```
 🔸 2049/tcp – NFS
-
+```
  ### ⚠️ Risks:
 
 Unauthorized directory access
@@ -225,9 +227,9 @@ Privilege escalation
 
 Restrict by IP
 Configure exports properly
-```
 
 # 🗄️ DATABASES
+
 ```bash
 🔸 3306 – MySQL
 🔸 5432 – PostgreSQL
@@ -262,10 +264,12 @@ Exposure of internal information
 
 Block external access
 Allow only trusted hosts
-
-📡 UDP / NETWORK DISCOVERY
+```
+📡 UDP / NETWORK DISCOVERY.
 🔸 1900/udp – SSDP / UPnP
-⚠️ Risks:
+```
+
+### ⚠️ Risks:
 
 DDoS amplification
 Device exposure
