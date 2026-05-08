@@ -147,7 +147,7 @@ Brute-force attacks
 Weak passwords
 Poor key management
 
-## 🛡️ Protection:
+***🛡️ Protection:***
 
 Block unrestricted external access
 Use IP whitelisting
@@ -163,7 +163,7 @@ Does not use encryption
 Credentials sent in plain text
 Session hijacking
 
-## 🛡️ Protection:
+***🛡️ Protection:***
 
  ❌ Block completely in the firewall
 Replace with SSH
@@ -177,7 +177,7 @@ Graphical remote desktop access
 Weak passwords
 No encryption (in older versions)
 
-## 🛡️ Protection:
+***🛡️ Protection:***
 
 Use over VPN
 Restrict by IP
@@ -200,7 +200,7 @@ https://github.com/Juliocesar-sec/cybersecurity-learning-portfolio/tree/main/lab
 Clear-text login
 Malware uploads
 
-## 🛡️ Protection:
+***🛡️ Protection:***
 
 Avoid → use SFTP instead
 Block public access
@@ -212,7 +212,7 @@ Block public access
 Ransomware (e.g., WannaCry)
 Remote Code Execution (RCE)
 
-## 🛡️ Protection:
+***🛡️ Protection:***
 
 # ❌ Never expose to the internet
 
@@ -225,7 +225,7 @@ Allow only on internal networks
 Unauthorized directory access
 Privilege escalation
 
- ## 🛡️ Protection:
+***🛡️ Protection:***
 
 Restrict by IP
 Configure exports properly
@@ -244,7 +244,7 @@ Databases exposed to the internet
 Weak passwords
 Lack of authentication
 
-## 🛡️ Protection:
+***🛡️ Protection:***
 
 ❌ Never make them public
 
@@ -262,7 +262,7 @@ Firewall should block everything by default
 Service enumeration
 Exposure of internal information
 
-# 🛡️ Protection:
+***🛡️ Protection:***
 
 Block external access
 Allow only trusted hosts
@@ -276,7 +276,7 @@ Allow only trusted hosts
 DDoS amplification
 Device exposure
 
-# 🛡️ Protection:
+***🛡️ Protection:***
 
 Disable UPnP when possible
 Block at the network edge
@@ -288,7 +288,7 @@ Block at the network edge
 Local information leakage
 Spoofing
 
- # 🛡️ Protection:
+***🛡️ Protection:***
 
 Limit to local network only
 Block on public networks
