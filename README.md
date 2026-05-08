@@ -18,7 +18,7 @@ This portfolio highlights my experience in IT Support, troubleshooting, networki
 - Remote Support
 - Help Desk Support
 - Google Workspace Administration
-- 
+
 ## 🌐 Networking
 - Cisco Networking Fundamentals
 - TCP/IP
@@ -36,7 +36,6 @@ This portfolio highlights my experience in IT Support, troubleshooting, networki
 - Microsoft Office
 - Remote Desktop Tools
 
----
 
 # 📜 Certifications
 
@@ -47,7 +46,7 @@ This portfolio highlights my experience in IT Support, troubleshooting, networki
 
 # 🚀 Projects
 
-## Office Network Setup
+## 🏢 Office Network Setup
 Designed and configured a small office network with:
 - Router and switch configuration
 - VLAN setup
