@@ -46,7 +46,7 @@ Unauthorized Zone Transfer
 
 → Leakage of the entire domain structure and internal records.
 
-## 🛡️ Protection with Firewall:
+***🛡️ Protection with Firewall:***
 
 Allow DNS traffic only to trusted servers
 Block unnecessary external queries
@@ -54,7 +54,7 @@ Monitor for anomalous DNS traffic
 
 ## 🖥️ REMOTE ACCESS
 
-* What is Encrypted Remote Access (SSH)?
+***What is Encrypted Remote Access (SSH)?***
 
 SSH is a secure protocol that lets you remotely connect to a server or computer over the internet or a network.
 It creates an encrypted tunnel between your device (client) and the remote server. This means:
@@ -65,7 +65,7 @@ It creates an encrypted tunnel between your device (client) and the remote serve
 ```
 Unlike Telnet (port 23), which sends everything in plain text (very dangerous), SSH protects your session with strong encryption (like AES).
 
-* Why do we use it?
+***Why do we use it?***
 
 System administrators, developers, and IT professionals use SSH to:
 ```
@@ -74,7 +74,7 @@ System administrators, developers, and IT professionals use SSH to:
 . Transfer files securely (with SCP or SFTP);
 . Troubleshoot and maintain systems from anywhere.
 ```
-* Why You Must Be Careful When Using SSH
+***Why You Must Be Careful When Using SSH***
 
 Even though SSH is encrypted and considered secure, it is one of the most attacked services on the internet. Here's why you still need to be very careful:
 ```
@@ -88,60 +88,60 @@ Even though SSH is encrypted and considered secure, it is one of the most attack
 ```
 Bottom line: SSH is safe only if configured properly. Default settings are often not secure enough for exposure to the public internet.
 
-* How to Use SSH Correctly and Securely (Best Practices)
+***How to Use SSH Correctly and Securely (Best Practices)***
 
 Here’s a clear, practical guide to using SSH the right way:
 
-1. Never use passwords for login (if possible)
+***1. Never use passwords for login (if possible)***
 ```
 . Use SSH Key Authentication instead.
 . Generate a key pair (private key on your computer, public key on the server).
 . This is much stronger than any password.
 ```
-2. Disable password authentication completely
+***2. Disable password authentication completely***
 
 In the server’s SSH config file (/etc/ssh/sshd_config), set:
 ```
 PasswordAuthentication no
 PubkeyAuthentication yes
 ```
-3.Disable direct root login
+***3.Disable direct root login***
 ```
 PermitRootLogin no
 ```
 (Always log in as a normal user, then use sudo when needed.)
 
-4. Restrict access with a firewall
+***4. Restrict access with a firewall***
 ```
 . Do not open port 22 to the entire internet.
 . Use IP whitelisting: Allow SSH only from your home IP, office IPs, or trusted addresses.
 . Better option: Put SSH behind a VPN — never expose it directly to the public internet.
 ```
-5.Change the default port (optional but helpful)
+***5.Change the default port (optional but helpful)***
 
 Change from 22 to something like 2222 or 2244 to reduce automated bot scans.
 
-6. Add extra layers of security:
+***6. Add extra layers of security:***
 ```
 . Enable Fail2Ban or similar tools to automatically block repeated failed login attempts.
 . Use two-factor authentication (2FA/MFA) with tools like Google Authenticator.
 . Set idle timeout: Automatically disconnect inactive sessions.
 . Keep your SSH software updated.
 ```
-7. Protect your private key:
+***7. Protect your private key:***
 ```
 . Never share your private key.
 . Use a strong passphrase to protect it.
 . Store it securely (not in cloud sync folders without protection).
 ```
-8. General rules:
+***8. General rules:***
 ```
 . Follow the principle of least privilege: Give users only the access they need.
 . Monitor SSH logs regularly for suspicious activity.
 . For high-security environments, use advanced tools like Teleport, Bastion hosts, or Zero Trust solutions instead of direct SSH.
 ```
 
-### ⚠️ Risks:
+***⚠️ Risks:***
 
 Brute-force attacks
 Weak passwords
@@ -158,7 +158,7 @@ Prefer key-based authentication (instead of passwords)
 ```
 Does not use encryption
 
-### ⚠️ Risks:
+***⚠️ Risks:***
 
 Credentials sent in plain text
 Session hijacking
@@ -195,7 +195,7 @@ https://github.com/Juliocesar-sec/cybersecurity-learning-portfolio/tree/main/lab
 🔸 21/tcp – FTP
 ```
 
-### ⚠️ Risks:
+***⚠️ Risks:***
 
 Clear-text login
 Malware uploads
@@ -307,7 +307,7 @@ Reduce exposure
 Control critical ports
 Prevent automated attacks
 
-# 🛡️ GENERAL BEST PRACTICES
+🛡️ **GENERAL BEST PRACTICES**
 
 1 .🔒 Principle of least privilege
 
