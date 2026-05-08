@@ -1,4 +1,4 @@
-### 🔥 What is a Firewall?
+# 🔥 What is a Firewall?
 
 * A firewall is a system (software or hardware) that controls network traffic, allowing or blocking connections based on security rules.
 ```
@@ -8,7 +8,7 @@ Decides who can enter
 Decides who can leave
 Filters what is safe versus what is suspicious
 ```
-# 🎯 Importance in IT and Cybersecurity
+## 🎯 Importance in IT and Cybersecurity
 
 * The firewall is one of the first lines of defense in any network.
 Main functions:
@@ -22,7 +22,7 @@ Main functions:
 👉 Without a firewall = your network is practically exposed.
 ```
 
-# 🌐 DNS / Name Resolution (Port 53/tcp)
+## 🌐 DNS / Name Resolution (Port 53/tcp)
 
 * What is DNS?
 
@@ -44,12 +44,11 @@ Unauthorized Zone Transfer
 
 → Leakage of the entire domain structure and internal records.
 
-# 🛡️ Protection with Firewall:
+## 🛡️ Protection with Firewall:
 
 Allow DNS traffic only to trusted servers
 Block unnecessary external queries
 Monitor for anomalous DNS traffic
-```
 
 # 🖥️ REMOTE ACCESS
 
