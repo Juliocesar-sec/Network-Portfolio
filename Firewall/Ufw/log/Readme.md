@@ -15,7 +15,7 @@ The UFW Color Log automates the configuration of detailed system logging and cre
 -🟡 Yellow: Quick identification of source IPs (SRC).
 -⚪ Gray: Other kernel informational events.
 ```
-### 🚀 How to install on your Debian/Ubuntu
+## 🚀 How to install on your Debian/Ubuntu
 
 Just follow the three steps below in your terminal:
 
@@ -37,7 +37,7 @@ To make the command work immediately in the current terminal session, run:
 ```bash
 source ~/.bashrc
 ```
-### 🛠️ How to use
+## 🛠️ How to use
 
 After installation, you no longer need long commands. Just type:
 ```bash
