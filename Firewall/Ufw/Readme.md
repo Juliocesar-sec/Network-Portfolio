@@ -1,5 +1,5 @@
-
-🔥 **UFW – Practical Guide (README)**
+---
+### 🔥 UFW – Practical Guide (README)
 
 📌 **What is UFW?**
 
@@ -23,7 +23,7 @@ UFW works with simple rules:
 - **reject** → block and send a response  
 - **limit** → limit connections (anti brute-force)  
 
-🚀 **Essential Commands**
+## 🚀 Essential Commands
 
 **Enable the firewall:**
 
@@ -43,7 +43,7 @@ sudo ufw disable
 sudo ufw status verbose
 ```
 
-🔐 **Recommended Initial Configuration**
+## 🔐 Recommended Initial Configuration
 
 Set default policies:
 
@@ -56,7 +56,7 @@ sudo ufw default allow outgoing
 - Block everything trying to enter  
 - Allow everything going out  
 
-🛡️ **Basic Rules**
+## 🛡️ Basic Rules
 
 **Allow SSH (port 22)**
 
@@ -83,7 +83,7 @@ sudo ufw deny 23/tcp
 sudo ufw allow 53
 ```
 
-🌐 **Security-Focused Examples (Based on Critical Ports)**
+## 🌐 Security-Focused Examples (Based on Critical Ports)
 
 **🔸 SSH (22) – Protect against brute-force**
 
@@ -110,7 +110,7 @@ sudo ufw deny 21/tcp
 sudo ufw allow from 192.168.0.10 to any port 3306
 ```
 
-📍 **Rules by IP**
+## 📍 Rules by IP
 
 **Allow a specific IP:**
 
@@ -124,7 +124,7 @@ sudo ufw allow from 192.168.1.100
 sudo ufw deny from 10.0.0.5
 ```
 
-🔍 **Rule Management**
+## 🔍 Rule Management
 
 **List rules with numbers:**
 
@@ -166,7 +166,7 @@ Logs are stored in:
 - 📉 Keep the number of open ports to a minimum  
 - 📊 Monitor logs frequently  
 
-🔄 **UFW vs IPTABLES**
+## 🔄 UFW vs IPTABLES
 
 | Feature          | UFW                  | IPTABLES                  |
 |------------------|----------------------|---------------------------|
@@ -174,7 +174,7 @@ Logs are stored in:
 | Control Level    | Medium               | Advanced                  |
 | Best For         | Simple / Quick setups| Advanced / Professional   |
 
-📚 **Extra Useful Commands**
+### 📚 Extra Useful Commands
 
 **Reset everything:**
 
@@ -194,7 +194,7 @@ sudo ufw allow 1000:2000/tcp
 sudo ufw allow in on eth0 to any port 22
 ```
 
-🧾 **Summary**
+### 🧾 Summary
 
 UFW is ideal for:
 
@@ -204,10 +204,4 @@ UFW is ideal for:
 
 👉 **Golden Rule:**  
 **“Open only what is necessary — everything else should remain blocked.”**
-
-🧑‍💻 **Author**  
-Introductory guide for studies in Linux, Networking, and Cybersecurity.
-
 ---
-
-Would you like me to add any explanations or make a combined guide with both iptables and UFW? Just let me know!
