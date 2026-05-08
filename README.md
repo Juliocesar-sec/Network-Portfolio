@@ -1,4 +1,5 @@
-# Network-Porifolio
+### 🌐 IT Support & Network Technician Portfolio
+
 # <Juliocesar-sec> — IT Support & Network Technician Portfolio
 
 Welcome to my professional portfolio repository.  
@@ -14,7 +15,7 @@ I enjoy solving technical problems, improving network performance, and helping o
 
 ---
 
-# Skills
+# 🛠️ Skills
 
 ## IT Support
 - Technical Troubleshooting
@@ -24,8 +25,8 @@ I enjoy solving technical problems, improving network performance, and helping o
 - Remote Support
 - Help Desk Support
 - Google Workspace Administration
-
-## Networking
+- 
+## 🌐 Networking
 - Cisco Networking Fundamentals
 - TCP/IP
 - VLAN Configuration
@@ -34,7 +35,7 @@ I enjoy solving technical problems, improving network performance, and helping o
 - Wi-Fi Setup & Support
 - Basic Firewall Configuration
 
-## Tools & Technologies
+## ⚙️ Tools & Technologies
 - Cisco Packet Tracer
 - Google Workspace
 - Windows
@@ -44,7 +45,7 @@ I enjoy solving technical problems, improving network performance, and helping o
 
 ---
 
-# Certifications
+# 📜 Certifications
 
 - Google IT Support Professional Certificate
 - Cisco Certified Support Technician (CCST)
@@ -52,7 +53,7 @@ I enjoy solving technical problems, improving network performance, and helping o
 
 ---
 
-# Projects
+# 🚀 Projects
 
 ## Office Network Setup
 Designed and configured a small office network with:
@@ -63,7 +64,7 @@ Designed and configured a small office network with:
 
 ---
 
-## IT Support Lab
+🖥️ IT Support Lab
 Performed:
 - Operating system installation
 - User support and troubleshooting
@@ -71,8 +72,7 @@ Performed:
 - System maintenance
 
 ---
-
-## Network Troubleshooting
+## 📡 Network Troubleshooting
 Diagnosed and resolved:
 - IP conflicts
 - DNS issues
@@ -89,25 +89,3 @@ Diagnosed and resolved:
 - Expand cloud and system administration knowledge
 
 ---
-
-# Contact
-
-## Email
-your.email@example.com
-
-## LinkedIn
-https://linkedin.com/in/yourprofile
-
-## GitHub
-https://github.com/yourusername
-
----
-
-# Repository Structure
-
-```bash
-├── network-projects/
-├── troubleshooting-notes/
-├── configs/
-├── diagrams/
-└── README.md
