@@ -207,7 +207,7 @@ Block public access
 ```
 🔸 445/tcp – SMB (Highly Critical 🚨)
 ```
-### ⚠️ Risks:
+ ⚠️ **Risks:**
 
 Ransomware (e.g., WannaCry)
 Remote Code Execution (RCE)
@@ -220,7 +220,7 @@ Allow only on internal networks
 ```
 🔸 2049/tcp – NFS
 ```
- ### ⚠️ Risks:
+ ⚠️ **Risks:**
 
 Unauthorized directory access
 Privilege escalation
@@ -238,7 +238,7 @@ Configure exports properly
 🔸 6379 – Redis
 🔸 27017 – MongoDB
 ```
-### ⚠️ Common Risks:
+ ⚠️ **Common Risks:**
 
 Databases exposed to the internet
 Weak passwords
@@ -257,7 +257,7 @@ Firewall should block everything by default
 🔸 111/tcp – rpcbind
 ```
 
-### ⚠️ Risks:
+ ⚠️ **Risks:**
 
 Service enumeration
 Exposure of internal information
@@ -271,7 +271,7 @@ Allow only trusted hosts
 🔸 1900/udp – SSDP / UPnP
 ```
 
-### ⚠️ Risks:
+⚠️ **Risks:**
 
 DDoS amplification
 Device exposure
@@ -283,7 +283,7 @@ Block at the network edge
 ```
 🔸 5353/udp – mDNS
 ```
- ### ⚠️ Risks:
+**⚠️ Risks:**
 
 Local information leakage
 Spoofing
@@ -296,7 +296,7 @@ Block on public networks
 
 # 🧠 IMPORTANT SUMMARY
 
-👉  In cybersecurity, the golden rule is:
+👉  **In cybersecurity, the golden rule is:**
 
 ```bash
 “If it doesn’t need to be open → it should be closed.”
