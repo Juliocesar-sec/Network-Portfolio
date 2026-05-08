@@ -1,5 +1,6 @@
 ### 🌐 IT Support & Network Technician Portfolio
 
+---
  <Juliocesar-sec>
 
 Welcome to my professional portfolio repository.  
@@ -43,7 +44,6 @@ This portfolio highlights my experience in IT Support, troubleshooting, networki
 - Cisco Certified Support Technician (CCST)
 - Cisco Networking Basics
 
----
 
 # 🚀 Projects
 
@@ -54,30 +54,19 @@ Designed and configured a small office network with:
 - Wireless connectivity
 - Basic network security
 
----
 
-🖥️ IT Support Lab
+## 🖥️ IT Support Lab
 Performed:
 - Operating system installation
 - User support and troubleshooting
 - Printer and device configuration
 - System maintenance
 
----
 ## 📡 Network Troubleshooting
 Diagnosed and resolved:
 - IP conflicts
 - DNS issues
 - Connectivity failures
 - Wi-Fi performance problems
-
----
-
-# Portfolio Goals
-
-- Improve networking and cybersecurity skills
-- Gain hands-on enterprise networking experience
-- Continue learning Cisco technologies
-- Expand cloud and system administration knowledge
 
 ---
