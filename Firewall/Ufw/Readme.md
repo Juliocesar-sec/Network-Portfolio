@@ -5,7 +5,7 @@
 
 UFW (Uncomplicated Firewall) is a tool that simplifies the use of iptables on Linux.  
 
-👉 It was created to make firewall configuration easier, especially on distributions like Ubuntu.
+👉 **It was created to make firewall configuration easier, especially on distributions like Ubuntu.**
 
 🎯 **Why Use UFW?**
 
@@ -52,7 +52,7 @@ sudo ufw default deny incoming
 sudo ufw default allow outgoing
 ```
 
-👉 This means:
+👉 **This means:**
 - Block everything trying to enter  
 - Allow everything going out  
 
@@ -138,7 +138,7 @@ sudo ufw status numbered
 sudo ufw delete [number]
 ```
 
-📊 **Logs**
+## 📊 Logs
 
 **Enable logging:**
 
