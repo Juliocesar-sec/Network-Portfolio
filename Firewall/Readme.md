@@ -507,19 +507,27 @@ SSDP (Simple Service Discovery Protocol) is part of UPnP (Universal Plug and Pla
 * Avoid exposing SSDP services to the internet
 * Regularly audit network devices that enable UPnP
 
-```
-🔸 5353/udp – mDNS
-```
-**⚠️ Risks:**
 
-Local information leakage
-Spoofing
 
-***🛡️ Protection:***
+🔸 5353/udp – mDNS (Multicast DNS)
 
-Limit to local network only
-Block on public networks
+mDNS is used for local network name resolution and service discovery without a central DNS server. It is commonly used in home networks and local device ecosystems.
 
+⚠️ Risks:
+
+* Local network information leakage
+* Device and service enumeration
+* Potential spoofing or rogue responses
+* Exposure of hostnames and internal services
+
+🛡️ Protection:
+
+* Restrict mDNS traffic to local network only
+* Block UDP 5353 on public or untrusted networks
+* Segment networks to limit broadcast scope
+* Monitor for unusual multicast traffic patterns
+
+---
 
 # 🧠 IMPORTANT SUMMARY
 
@@ -528,6 +536,7 @@ Block on public networks
 ```bash
 “If it doesn’t need to be open → it should be closed.”
 ```
+
 The firewall helps you:
 
 Reduce exposure
