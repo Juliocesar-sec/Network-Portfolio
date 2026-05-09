@@ -27,7 +27,9 @@ That said, a few important things about firewalls:
 * Security rules should be regularly reviewed and updated as network requirements evolve.
 
 A useful way to understand a firewall is to imagine it as a gatekeeper or security guard for your network.
+
 👉 **It works like a “bouncer” or gatekeeper for your network:**
+
 It decides:
 
 * Who can enter
