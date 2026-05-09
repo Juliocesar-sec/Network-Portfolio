@@ -78,7 +78,7 @@ Each VLAN was configured to improve network organization and reduce unnecessary 
 - IP addressing
 - DHCP services
 - Default gateway configuration
-- 
+
 **Switch Configuration**
   
 - VLAN assignment
