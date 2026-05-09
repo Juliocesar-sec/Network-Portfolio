@@ -1,4 +1,4 @@
-# 🏢 Office Network Lab
+#  Office Network Lab
 
 ## Overview
 
@@ -8,7 +8,7 @@ The lab represents a simple business environment where multiple departments comm
 
 ---
 
-# 🎯 Objectives
+#  Objectives
 
 - Configure a small office network
 - Implement VLAN segmentation
@@ -20,7 +20,7 @@ The lab represents a simple business environment where multiple departments comm
 
 ---
 
-# 🖥 Network Topology
+#  Network Topology
 
 The network includes:
 
@@ -37,7 +37,7 @@ Topology diagram:
 
 ---
 
-# 🛠 Technologies Used
+#  Technologies Used
 
 - Cisco Packet Tracer
 - VLAN Configuration
@@ -49,7 +49,7 @@ Topology diagram:
 
 ---
 
-# 📂 Files Included
+#  Files Included
 
 | File | Description |
 |------|-------------|
@@ -59,7 +59,7 @@ Topology diagram:
 
 ---
 
-# 🔀 VLAN Configuration
+#  VLAN Configuration
 
 Example VLAN structure used in the lab:
 
@@ -73,7 +73,7 @@ Each VLAN was configured to improve network organization and reduce unnecessary 
 
 ---
 
-# 🌐 Network Features
+#  Network Features
 
 ## Router Configuration
 - Interface setup
@@ -92,7 +92,7 @@ Each VLAN was configured to improve network organization and reduce unnecessary 
 
 ---
 
-# 🧪 Testing Performed
+#  Testing Performed
 
 The following tests were completed successfully:
 
@@ -105,7 +105,7 @@ The following tests were completed successfully:
 
 ---
 
-# 🛡 Basic Security Measures
+#  Basic Security Measures
 
 - VLAN segmentation
 - Device password configuration
@@ -114,7 +114,7 @@ The following tests were completed successfully:
 
 ---
 
-# 📚 Skills Demonstrated
+#  Skills Demonstrated
 
 - Network Design
 - Cisco Device Configuration
@@ -126,8 +126,8 @@ The following tests were completed successfully:
 
 ---
 
-# 📌 Notes
+#  Notes
 
 This project was created for learning and portfolio purposes to demonstrate practical networking and IT support knowledge using simulation environments.
 
----
+
