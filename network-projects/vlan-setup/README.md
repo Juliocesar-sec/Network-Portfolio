@@ -6,9 +6,7 @@ This project demonstrates the configuration and implementation of VLANs (Virtual
 
 The purpose of this lab is to improve network organization, security, and traffic management by separating departments into different VLANs.
 
----
-
-#  Objectives
+**Objectives**
 
 - Create and configure VLANs
 - Assign switch ports to VLANs
@@ -17,9 +15,8 @@ The purpose of this lab is to improve network organization, security, and traffi
 - Improve network segmentation
 - Practice basic switch administration
 
----
 
-#  Network Structure
+**Network Structure**
 
 The lab environment includes:
 
