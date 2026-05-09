@@ -97,8 +97,6 @@ Restart:
 - DHCP server
 - Network switch (if necessary)
 
----
-
 **Resolution Example**
 
 Issue:
