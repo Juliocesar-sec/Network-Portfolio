@@ -343,44 +343,78 @@ https://github.com/Juliocesar-sec/cybersecurity-learning-portfolio/tree/main/lab
 
 ##  FILE SHARING
 
-```bash
-🔸 21/tcp – FTP
-```
+File sharing services are commonly used in networks to transfer data between systems, but they are also frequent targets for attackers due to exposed ports and legacy protocols.
+
+Proper firewall configuration and service hardening are essential to reduce exposure.
+
+🔸 21/tcp – FTP (File Transfer Protocol)
+
+FTP is an older file transfer protocol used to upload and download files between clients and servers.
 
 ***⚠️ Risks:***
 
-Clear-text login
-Malware uploads
+* Clear-text authentication (username and password are not encrypted)
+* Data transmitted without encryption
+* Vulnerable to credential interception
+* Common target for automated malware uploads and brute-force attacks
 
 ***🛡️ Protection:***
 
-Avoid → use SFTP instead
-Block public access
-```
+* Avoid FTP whenever possible
+* Use SFTP (SSH File Transfer Protocol) instead
+* Block public access to port 21 using firewall rules
+* Restrict access to trusted internal networks only
+* Disable anonymous login if FTP must be used
+
 🔸 445/tcp – SMB (Highly Critical 🚨)
-```
+
+SMB (Server Message Block) is used for Windows file sharing, printer sharing, and network resource access.
+
+It is a powerful protocol but also one of the most frequently exploited services in enterprise and home networks.
+
  ⚠️ **Risks:**
 
-Ransomware (e.g., WannaCry)
-Remote Code Execution (RCE)
+* High exposure to ransomware attacks (e.g., lateral movement across networks)
+* Remote code execution vulnerabilities in outdated SMB versions
+* Credential theft and pass-the-hash attacks
+* Network-wide propagation of malware
+* Exposure of shared files and system resources if misconfigured
 
 ***🛡️ Protection:***
 
-# ❌ Never expose to the internet
+* Block SMB (port 445) from public internet access
+* Disable SMBv1 (legacy and insecure version)
+* Restrict SMB access to trusted internal networks only
+* Use firewall rules to limit host-to-host communication
+* Enable SMB encryption (SMBv3 where possible)
+* Regularly patch operating systems and services
+  
+File sharing services should never be exposed directly to the internet without strict controls. In most secure environments, they are tightly restricted, monitored, and only accessible within controlled network segments.
 
-Allow only on internal networks
-```
-🔸 2049/tcp – NFS
-```
+🔸 2049/tcp – NFS (Network File System)
+
+NFS (Network File System) is a protocol used mainly in Linux/Unix environments to share directories across a network, allowing remote systems to mount and access file systems as if they were local.
+
+It is widely used in servers, virtualization environments, and internal infrastructure where centralized storage is required.
+
  ⚠️ **Risks:**
-
-Unauthorized directory access
-Privilege escalation
-
+ 
+* Unauthorized directory access if exports are misconfigured
+* Exposure of sensitive files to unintended hosts
+* Privilege escalation through weak permission settings
+* Network sniffing or interception in poorly secured environments
+* Potential lateral movement if an attacker gains access to shared mounts
+ 
 ***🛡️ Protection:***
 
-Restrict by IP
-Configure exports properly
+* Restrict access by IP address or trusted subnets only
+* Properly configure /etc/exports with strict permissions
+* Use root_squash to prevent root-level remote privileges
+* Avoid exporting sensitive directories unnecessarily
+* Use firewall rules to block external access to port 2049
+* Monitor mount activity and access logs regularly
+
+  NFS is highly efficient for internal file sharing, but it must be tightly controlled. In secure environments, it is typically restricted to internal networks only, with strict export rules and firewall filtering to prevent unauthorized access.
 
 # 🗄️ DATABASES
 
