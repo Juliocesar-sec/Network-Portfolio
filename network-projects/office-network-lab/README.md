@@ -16,9 +16,8 @@ The lab represents a simple business environment where multiple departments comm
 - Test communication between devices
 - Apply basic network security practices
 
----
 
-#  Network Topology
+**Network Topology**
 
 The network includes:
 
