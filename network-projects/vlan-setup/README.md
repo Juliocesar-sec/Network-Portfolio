@@ -52,16 +52,18 @@ The lab environment includes:
 
 #  Configuration Tasks
 
-## VLAN Creation
+**VLAN Creation**
 - Created VLAN 10
 - Created VLAN 20
 - Created VLAN 30
 
-## Port Assignment
+**Port Assignment**
+
 - Assigned switch ports to specific VLANs
 - Configured access ports
 
-## Trunk Configuration
+**Trunk Configuration**
+
 - Enabled trunking between switches
 - Allowed VLAN traffic across trunk links
 
@@ -100,7 +102,7 @@ The following tests were completed:
 
 ---
 
-# 📌 Notes
+#  Notes
 
 This lab was created using Cisco Packet Tracer for educational and portfolio purposes to demonstrate practical networking fundamentals.
 
