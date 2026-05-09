@@ -178,7 +178,6 @@ https://192.168.1.1
 ---
 
 
-
 🛡️ **Basic Security Rules**
 
 A secure firewall configuration is built on a simple but strict rule structure: deny everything by default, then explicitly allow only what is required.
@@ -220,7 +219,7 @@ This involves:
 * Restricting access to specific services (e.g., HTTP/HTTPS only)
 * Applying firewall rules to limit exposure
 
-🌐 **Security Based on Critical Ports**
+ **Security Based on Critical Ports**
 
 🔸 **DNS (53)**  
    - Allow only to trusted DNS servers  
@@ -241,8 +240,10 @@ This involves:
 
 🔸 **UPnP (1900/udp)**  
    - ⚠️ Disable whenever possible
+
      
 ---
+
 
  **Advanced Features**
 
@@ -277,7 +278,9 @@ This involves:
 
 - ❗ A wrong configuration can take down your entire network  
 - ❗ Exposing ports incorrectly is extremely risky  
-- ❗ Always make backups of your configuration  
+- ❗ Always make backups of your configuration
+
+---
 
  **Best Practices**
 
@@ -294,7 +297,7 @@ This involves:
 This reduces the attack surface and prevents unnecessary exposure of services.
 
 - 🌐 Use VPN for remote access
-- 
+
 Remote administration should never rely on direct exposure of internal services.
 
 * Use VPN solutions like OpenVPN, IPsec, or WireGuard
@@ -304,7 +307,7 @@ Remote administration should never rely on direct exposure of internal services.
 This ensures secure access without opening internal systems to the public internet.
 
 - 🚫 Minimize open ports
-- 
+
 Every open port represents a potential entry point.
 
 * Close unused services and interfaces
@@ -324,7 +327,7 @@ Logging provides visibility into network activity and potential threats.
 Consistent monitoring helps detect issues before they escalate.
   
 - 🔄 Keep the system updated regularly
-- 
+ 
 Security updates are essential for maintaining system integrity.
 
 * Apply pfSense updates as they are released
