@@ -418,7 +418,7 @@ It is widely used in servers, virtualization environments, and internal infrastr
   
   ---
 
-# 🗄️ DATABASES
+#  DATABASES
 
 Database services are critical components of modern applications. They store structured and unstructured data used by websites, applications, and internal systems. Because they often contain sensitive information, they must be tightly secured and never exposed unnecessarily.
 
@@ -526,6 +526,8 @@ mDNS is used for local network name resolution and service discovery without a c
 * Block UDP 5353 on public or untrusted networks
 * Segment networks to limit broadcast scope
 * Monitor for unusual multicast traffic patterns
+
+System discovery and RPC services are designed for convenience in trusted environments, not for open network exposure. In secure network designs, they are typically restricted to internal segments, filtered by firewalls, and disabled when not required.
 
 ---
 
