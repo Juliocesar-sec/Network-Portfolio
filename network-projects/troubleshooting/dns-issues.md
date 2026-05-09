@@ -21,9 +21,52 @@ DNS problems can prevent users from accessing websites and network services even
 
 # 🔍 Diagnostic Steps
 
-## 1. Check Internet Connectivity
+ 1. **Check Internet Connectivity**
 
 Test basic connectivity:
 
 ```bash
 ping 8.8.8.8
+```
+If the ping succeeds, the internet connection is working.
+
+
+2. **Test DNS Resolution**
+   
+```
+nslookup google.com
+```
+or 
+
+```
+ping google.com
+```
+If domain names fail to resolve, DNS may be misconfigured.
+
+3. **Verify DNS Server Settings**
+ 
+Windows
+```
+ipconfig /all
+```
+
+Check:
+
+- DNS server addresses
+- Default gateway
+- Network adapter configuration
+
+Linux
+```
+cat /etc/resolv.conf
+```
+
+
+
+
+
+
+
+
+
+
