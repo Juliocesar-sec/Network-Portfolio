@@ -72,7 +72,10 @@ These tools allow pfSense to function not only as a firewall, but as a full-feat
 
 Overall, pfSense is used because it bridges the gap between powerful networking control and practical usability, making it a strong choice for both learning environments and production networks.
 
+
 ---
+
+
 
 ## Basic Concepts
 
@@ -170,8 +173,11 @@ https://192.168.1.1
 
 3. Update the system  
    - Always keep pfSense up to date
+
   
-     ---
+---
+
+
 
 🛡️ **Basic Security Rules**
 
@@ -324,6 +330,3 @@ pfSense is a complete solution for:
 🧑‍💻 **Author**  
 Introductory guide for studies in Networking, Security, and Infrastructure.
 
----
-
-Would you like me to create a combined comparison guide for **iptables + UFW + pfSense** or explain any specific section (like how to set up VPN or port forwarding in pfSense) in more detail? Just let me know!
