@@ -125,29 +125,31 @@ Rules define what traffic is allowed or blocked based on direction, source, dest
 - Block WAN → LAN (default behavior)  
 → External traffic is blocked from directly accessing internal devices unless explicitly allowed
 
-**🔹 NAT (Network Address Translation)**  
+** NAT (Network Address Translation)**  
 Allows multiple internal devices to share a single public IP address.
 
-⚙️ **Main Features**
+**Stateful Firewall**  
 
-🔐 **Stateful Firewall**  
 - Tracks the state of connections  
 - Automatically allows legitimate return traffic  
 
-🌐 **VPN**  
+**VPN**  
+
 - Secure remote access  
 - Site-to-site connections between offices  
 
-📡 **IDS/IPS (via packages)**  
+ **IDS/IPS (via packages)**  
+ 
 - Detects attacks  
 - Blocks intrusions  
 
-📊 **Monitoring**  
+ **Monitoring**  
+ 
 - Detailed logs  
 - Real-time traffic graphs  
 - Connection statistics and alerts  
 
-🚀 **Installation (Quick Summary)**
+ **Installation (Quick Summary)**
 
 1. Download the ISO from the official website  
 2. Install on a physical machine or virtual machine  
@@ -158,7 +160,7 @@ Allows multiple internal devices to share a single public IP address.
 https://192.168.1.1
 ```
 
-🔐 **Recommended Initial Setup**
+ **Recommended Initial Setup**
 
 1. Change the default password  
    - Default user: **admin**  
@@ -167,7 +169,9 @@ https://192.168.1.1
    - Use trusted DNS servers (e.g., Cloudflare 1.1.1.1 or Google 8.8.8.8)  
 
 3. Update the system  
-   - Always keep pfSense up to date  
+   - Always keep pfSense up to date
+  
+     ---
 
 🛡️ **Basic Security Rules**
 
@@ -211,16 +215,17 @@ https://192.168.1.1
    - Bandwidth control and prioritization  
 
 🔹 **High Availability (HA)**  
-   - Failover between two pfSense devices  
+   - Failover between two pfSense devices
+   - 
 
-📦 **Useful Packages**
+ **Useful Packages**
 
 - **Snort / Suricata** → IDS/IPS  
 - **pfBlockerNG** → IP blocking and ad blocking  
 - **Squid** → Web proxy and caching  
 - **OpenVPN / WireGuard** → VPN solutions  
 
-📊 **Monitoring and Logs**
+ **Monitoring and Logs**
 
 - Firewall logs  
 - Traffic graphs per interface  
@@ -233,13 +238,61 @@ https://192.168.1.1
 - ❗ Exposing ports incorrectly is extremely risky  
 - ❗ Always make backups of your configuration  
 
-🧠 **Best Practices**
+ **Best Practices**
 
-- 🔒 Principle of least privilege  
-- 🌐 Use VPN for remote access  
-- 🚫 Minimize open ports  
-- 📊 Monitor logs constantly  
-- 🔄 Keep the system updated regularly  
+ Running pfSense effectively is not just about configuring rules, but about maintaining a secure and controlled network posture over time. Good firewall design follows consistent principles that reduce exposure and simplify troubleshooting.
+
+- 🔒 Principle of least privilege
+
+ Only allow the minimum level of access required for systems and users to function.
+
+* Avoid broad “allow any” rules
+* Restrict traffic by source, destination, and service
+* Limit administrative access to trusted hosts only
+
+This reduces the attack surface and prevents unnecessary exposure of services.
+
+- 🌐 Use VPN for remote access
+- 
+Remote administration should never rely on direct exposure of internal services.
+
+* Use VPN solutions like OpenVPN, IPsec, or WireGuard
+* Require authentication before network access is granted
+* Encrypt all remote traffic between users and the network
+
+This ensures secure access without opening internal systems to the public internet.
+
+- 🚫 Minimize open ports
+- 
+Every open port represents a potential entry point.
+
+* Close unused services and interfaces
+* Only expose required services to external networks
+* Regularly audit firewall rules to remove unnecessary exceptions
+
+A smaller attack surface means fewer opportunities for exploitation.
+  
+- 📊 Monitor logs constantly
+  
+Logging provides visibility into network activity and potential threats.
+
+* Review firewall logs for blocked and allowed traffic
+* Identify unusual patterns or repeated connection attempts
+* Use logs for troubleshooting and incident detection
+
+Consistent monitoring helps detect issues before they escalate.
+  
+- 🔄 Keep the system updated regularly
+- 
+Security updates are essential for maintaining system integrity.
+
+* Apply pfSense updates as they are released
+* Patch underlying FreeBSD components when required
+* Update installed packages and plugins
+
+Unpatched systems are one of the most common causes of firewall compromise.
+
+---
 
 🔄 **pfSense vs UFW vs IPTABLES**
 
@@ -250,7 +303,10 @@ https://192.168.1.1
 | Power / Flexibility  | ⭐⭐⭐⭐⭐ (Enterprise)     | ⭐⭐⭐ (Medium)         | ⭐⭐⭐⭐⭐ (Maximum)         |
 | Best For             | Full networks, companies| Single servers         | Advanced Linux servers    |
 
-🧾 **Summary**
+
+.---
+
+ **Summary**
 
 pfSense is a complete solution for:
 
