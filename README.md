@@ -25,6 +25,7 @@ Troubleshooting requires both technical knowledge and structured diagnostic thin
 Technology changes continuously, making continuous learning an important part of the profession.
 
 Our vision is that good IT support should combine technical competence, communication, and practical problem-solving. Reliable infrastructure is built not only through advanced technology, but through consistent maintenance, careful configuration, and fast troubleshooting.
+---
 
 #  Skills
 
@@ -64,7 +65,6 @@ Our vision is that good IT support should combine technical competence, communic
 - Google IT Support Professional Certificate
 - Cisco Certified Support Technician (CCST)
 - Cisco Networking Basics
-- 
 ---
 
 #  Projects
