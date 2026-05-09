@@ -1,6 +1,7 @@
 # 🔥 FIREWALL 🔥
 
 **What is a Firewall?**
+
 A firewall is a security system, implemented through software, hardware, or both, designed to control network traffic by allowing or blocking connections according to predefined security rules.
 
 It acts as a protective barrier between trusted systems and external networks, monitoring data as it enters or leaves a device or infrastructure.
@@ -29,12 +30,14 @@ A useful way to understand a firewall is to imagine it as a gatekeeper or securi
 👉 **It works like a “bouncer” or gatekeeper for your network:**
 It decides:
 
-Who can enter
-Who can leave
-Which traffic is safe
-Which traffic appears suspicious or unauthorized
+* Who can enter
+* Who can leave
+* Which traffic is safe
+* Which traffic appears suspicious or unauthorized
 
 Our vision is that understanding firewalls should start with understanding traffic control itself. Network security is not only about blocking connections, but about deciding clearly and intentionally how systems are allowed to communicate.
+
+---
 
 ##  Importance in IT and Cybersecurity
 
@@ -55,14 +58,15 @@ These protections are essential because many attacks begin through exposed netwo
 
 That said, a firewall should not be viewed as a complete security solution by itself. It works best when combined with:
 
-System updates
-Strong authentication
-Network monitoring
-Antivirus and endpoint protection
-Secure configuration practices
+* System updates
+* Strong authentication
+* Network monitoring
+* Antivirus and endpoint protection
+* Secure configuration practices
 
 👉 **Without a firewall, a system or network becomes significantly more exposed to unauthorized connections, automated scans, and external attacks.**
 
+---
 
 ## 🌐 DNS / Name Resolution (Port 53/tcp)
 
