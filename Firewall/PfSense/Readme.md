@@ -86,7 +86,7 @@ Understanding pfSense starts with how it separates and controls network traffic 
 Interfaces in pfSense represent different network connections. Each interface can have its own IP range, rules, and security policies.
 
 - **WAN** → Internet connection
-- 
+  
   The WAN interface is the connection to the external network, usually the internet.
 
 * Handles inbound and outbound internet traffic
@@ -94,7 +94,7 @@ Interfaces in pfSense represent different network connections. Each interface ca
 * Protected by strict firewall rules by default
 
 - **LAN** → Internal network
-- 
+  
 The LAN interface represents the internal private network.
 
 * Used by internal devices (PCs, servers, printers)
@@ -128,7 +128,8 @@ Rules define what traffic is allowed or blocked based on direction, source, dest
 - Block WAN → LAN (default behavior)  
 → External traffic is blocked from directly accessing internal devices unless explicitly allowed
 
-** NAT (Network Address Translation)**  
+**NAT (Network Address Translation)**  
+
 Allows multiple internal devices to share a single public IP address.
 
 **Stateful Firewall**  
