@@ -347,18 +347,18 @@ File sharing services are commonly used in networks to transfer data between sys
 
 Proper firewall configuration and service hardening are essential to reduce exposure.
 
-🔸 21/tcp – FTP (File Transfer Protocol)
+🔸 **21/tcp – FTP (File Transfer Protocol)**
 
 FTP is an older file transfer protocol used to upload and download files between clients and servers.
 
-***⚠️ Risks:***
+⚠️ Risks:
 
 * Clear-text authentication (username and password are not encrypted)
 * Data transmitted without encryption
 * Vulnerable to credential interception
 * Common target for automated malware uploads and brute-force attacks
 
-***🛡️ Protection:***
+🛡️ Protection:
 
 * Avoid FTP whenever possible
 * Use SFTP (SSH File Transfer Protocol) instead
@@ -366,13 +366,13 @@ FTP is an older file transfer protocol used to upload and download files between
 * Restrict access to trusted internal networks only
 * Disable anonymous login if FTP must be used
 
-🔸 445/tcp – SMB (Highly Critical 🚨)
+🔸 **445/tcp – SMB** (Highly Critical 🚨)
 
 SMB (Server Message Block) is used for Windows file sharing, printer sharing, and network resource access.
 
 It is a powerful protocol but also one of the most frequently exploited services in enterprise and home networks.
 
- ⚠️ **Risks:**
+ ⚠️ Risks:
 
 * High exposure to ransomware attacks (e.g., lateral movement across networks)
 * Remote code execution vulnerabilities in outdated SMB versions
@@ -380,7 +380,7 @@ It is a powerful protocol but also one of the most frequently exploited services
 * Network-wide propagation of malware
 * Exposure of shared files and system resources if misconfigured
 
-***🛡️ Protection:***
+🛡️ Protection:
 
 * Block SMB (port 445) from public internet access
 * Disable SMBv1 (legacy and insecure version)
@@ -391,13 +391,13 @@ It is a powerful protocol but also one of the most frequently exploited services
   
 File sharing services should never be exposed directly to the internet without strict controls. In most secure environments, they are tightly restricted, monitored, and only accessible within controlled network segments.
 
-🔸 2049/tcp – NFS (Network File System)
+🔸 **2049/tcp – NFS (Network File System)**
 
 NFS (Network File System) is a protocol used mainly in Linux/Unix environments to share directories across a network, allowing remote systems to mount and access file systems as if they were local.
 
 It is widely used in servers, virtualization environments, and internal infrastructure where centralized storage is required.
 
- ⚠️ **Risks:**
+ ⚠️ Risks:
  
 * Unauthorized directory access if exports are misconfigured
 * Exposure of sensitive files to unintended hosts
@@ -405,7 +405,7 @@ It is widely used in servers, virtualization environments, and internal infrastr
 * Network sniffing or interception in poorly secured environments
 * Potential lateral movement if an attacker gains access to shared mounts
  
-***🛡️ Protection:***
+🛡️ Protection:
 
 * Restrict access by IP address or trusted subnets only
 * Properly configure /etc/exports with strict permissions
@@ -415,8 +415,12 @@ It is widely used in servers, virtualization environments, and internal infrastr
 * Monitor mount activity and access logs regularly
 
   NFS is highly efficient for internal file sharing, but it must be tightly controlled. In secure environments, it is typically restricted to internal networks only, with strict export rules and firewall filtering to prevent unauthorized access.
+  
+  ---
 
 # 🗄️ DATABASES
+
+Database services are critical components of modern applications. They store structured and unstructured data used by websites, applications, and internal systems. Because they often contain sensitive information, they must be tightly secured and never exposed unnecessarily.
 
 ```bash
 🔸 3306 – MySQL
@@ -424,48 +428,85 @@ It is widely used in servers, virtualization environments, and internal infrastr
 🔸 6379 – Redis
 🔸 27017 – MongoDB
 ```
- ⚠️ **Common Risks:**
 
-Databases exposed to the internet
-Weak passwords
-Lack of authentication
+These ports correspond to widely used database systems:
+
+* MySQL → relational database system
+* PostgreSQL → advanced relational database system
+* Redis → in-memory key-value store
+* MongoDB → NoSQL document database
+
+ ⚠️ **Common Risks:**
+ 
+* Databases exposed directly to the internet
+* Weak or default passwords
+* Missing or misconfigured authentication
+* Unauthorized remote connections
+* Data leakage or full database dumps
+* Brute-force attacks on database credentials
+* Misconfigured access control rules
+
+When databases are exposed, attackers often scan for open ports and attempt automated exploitation.
 
 ***🛡️ Protection:***
 
-❌ Never make them public
+* Never expose database ports publicly on the internet
+* Allow access only from:
+  1- Internal network segments
+  2- Trusted application servers
+  3- Secure VPN connections
+* Configure firewall rules to block all external access by default
+* Enforce strong authentication and role-based access control
+* Disable remote root or admin access where possible
+* Regularly update database software to patch vulnerabilities
+* Monitor logs for unusual queries or connection attempts
+  
+Database security follows a simple principle: if a database does not need to be public, it should never be reachable from the public internet. Most secure architectures place databases in private networks behind firewalls, accessible only through controlled application layers.
 
-Allow access only from internal network or VPN
-Firewall should block everything by default
+  ---
 
-## ⚙️ SYSTEM SERVICES
+##  SYSTEM SERVICES
 
-```
-🔸 111/tcp – rpcbind
-```
+System services often run in the background to support networking, device discovery, and remote procedure calls. While useful in internal environments, many of these services can become security risks if exposed externally.
 
- ⚠️ **Risks:**
+Proper firewall configuration is essential to ensure these services remain accessible only where they are actually needed.
+
+🔸 **111/tcp – rpcbind**
+
+rpcbind is a service used by Remote Procedure Call (RPC) systems to map network services to ports. It is commonly found in Unix/Linux environments and is often associated with NFS and legacy distributed systems.
+
+ ⚠️ Risks:
 
 Service enumeration
 Exposure of internal information
 
-***🛡️ Protection:***
+🛡️ Protection:
 
 Block external access
 Allow only trusted hosts
-```
-📡 UDP / NETWORK DISCOVERY.
-🔸 1900/udp – SSDP / UPnP
-```
 
-⚠️ **Risks:**
+ **UDP / NETWORK DISCOVERY.**
 
-DDoS amplification
-Device exposure
+ Network discovery protocols are used to automatically detect devices and services on a local network. While convenient, they are not designed for exposure to untrusted networks.
 
-***🛡️ Protection:***
+🔸 **1900/udp – SSDP / UPnP**
 
-Disable UPnP when possible
-Block at the network edge
+SSDP (Simple Service Discovery Protocol) is part of UPnP (Universal Plug and Play), used for automatic device discovery and configuration.
+
+⚠️ Risks:
+
+* DDoS amplification attacks
+* External device and service exposure
+* Unauthorized network discovery
+* Misuse of open UPnP services on routers or IoT devices
+
+🛡️ Protection:
+
+* Disable UPnP when it is not strictly required
+* Block UDP port 1900 at the network edge (firewall/router)
+* Avoid exposing SSDP services to the internet
+* Regularly audit network devices that enable UPnP
+
 ```
 🔸 5353/udp – mDNS
 ```
