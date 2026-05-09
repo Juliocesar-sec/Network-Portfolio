@@ -1,1 +1,12 @@
+                [ Router ]
+                     |
+               ----------------
+               |              |
+          [ Switch 1 ]   [ Switch 2 ]
+             |   |           |   |
+           PC1 PC2         PC3 PC4
 
+                 |
+          [ Wireless AP ]
+                 |
+              Laptop
