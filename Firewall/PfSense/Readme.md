@@ -179,7 +179,7 @@ https://192.168.1.1
 ---
 
 
-🛡️ **Basic Security Rules**
+## Basic Security Rules
 
 A secure firewall configuration is built on a simple but strict rule structure: deny everything by default, then explicitly allow only what is required.
 
@@ -246,7 +246,7 @@ This involves:
 ---
 
 
- **Advanced Features**
+## Advanced Features
 
 🔹 **VLANs**  
    - Network segmentation (e.g., IT, Guests, IoT)  
@@ -283,7 +283,7 @@ This involves:
 
 ---
 
- **Best Practices**
+## Best Practices
 
  Running pfSense effectively is not just about configuring rules, but about maintaining a secure and controlled network posture over time. Good firewall design follows consistent principles that reduce exposure and simplify troubleshooting.
 
@@ -351,7 +351,7 @@ Unpatched systems are one of the most common causes of firewall compromise.
 
 .---
 
- **Summary**
+## Summary
 
 pfSense is a complete solution for:
 
