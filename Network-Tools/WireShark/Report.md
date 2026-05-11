@@ -102,3 +102,54 @@ Screenshot 28 – IPv4 and MAC Address
 
 ![2Step 1](https://github.com/Juliocesar-sec/Network-Portfolio/blob/fa8b82c2980a60d5258ecfea3dd005463502e3ab/Network-Tools/WireShark/Screenshot/wirewshark_3.png)
 
+## Step 2 — Start Wireshark and Capture ARP Traffic
+
+**2A — Launch Wireshark**
+
+Wireshark was launched from the Debian application menu.
+
+After opening the application, the active network interface identified earlier (enp0s3 or wlan0) was selected for packet capture.
+
+**2B — Configure ARP Packet Filter**
+
+To capture only ARP traffic, the following display filter was entered into the Wireshark filter bar:
+
+```
+arp
+```
+After selecting the correct interface and applying the ARP filter, packet capture was started by clicking the Start Capturing Packets button (shark fin icon).
+
+This configuration allows Wireshark to display only ARP packets exchanged between devices on the local network.
+
+![2Step 2B](https://github.com/Juliocesar-sec/Network-Portfolio/blob/4547f5f7268dc441dbe5239a53ce8dcf78047477/Network-Tools/WireShark/Screenshot/wireshark_4.png)
+
+**Observations**
+
+Once the capture began, live network traffic started appearing in the packet list pane.
+Each entry represented communication between source and destination devices on the LAN.
+
+
+**2C — Test Connectivity to the Default Gateway***
+
+To generate ARP traffic, connectivity to the default gateway was tested using the ping command.
+
+```
+ping 192.168.1.1
+Example Output
+PING 192.168.1.1 (192.168.1.1) 56(84) bytes of data.
+64 bytes from 192.168.1.1: icmp_seq=1 ttl=64 time=2.1 ms
+64 bytes from 192.168.1.1: icmp_seq=2 ttl=64 time=1.8 ms
+64 bytes from 192.168.1.1: icmp_seq=3 ttl=64 time=2.0 ms
+64 bytes from 192.168.1.1: icmp_seq=4 ttl=64 time=1.9 ms
+```
+
+The successful replies confirmed network connectivity between the PC and the default gateway.
+
+**ARP Activity**
+
+During the ping process, Wireshark captured ARP request and ARP reply packets used to resolve the MAC address associated with the gateway’s IPv4 address.
+
+Suggested Screenshot:
+
+![Step 2C](https://github.com/Juliocesar-sec/Network-Portfolio/blob/292f4370b54d4b21b595dd5d98c535505def45e9/Network-Tools/WireShark/Screenshot/wireshark_5.png)
+
