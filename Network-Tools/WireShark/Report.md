@@ -58,6 +58,11 @@ Verified that Wireshark 4.4.15 was successfully installed.
 
 
 ![1Step 1](https://github.com/Juliocesar-sec/Network-Portfolio/blob/78a0051631f8675373576585329c5e69bae96c02/Network-Tools/WireShark/Screenshot/wireshark_2.png)
+ 
+So after adding the group, you must either:
+
+- Log out and log back in, or
+- Reboot 
 
 ---
 
