@@ -12,7 +12,7 @@ Updated the Debian package repository information before installing Wireshark.
 
  ## **Step 2: Install Wireshark**
 
-Screenshot 2 – Installing Wireshark
+![Install Wireshark](https://github.com/Juliocesar-sec/Network-Portfolio/blob/704f001e867143531e43e1e8fa4b32e17a0ced57/Network-Tools/WireShark/Screenshot/wireshark_1.png)
 
 ```
 sudo apt install wireshark
@@ -29,4 +29,30 @@ sudo usermod -aG wireshark $USER
 ```
 
 Added the current user to the wireshark group to allow packet capture without running as root.
+
+
+## **Step 4: Apply Group Changes**
+
+Screenshot 4 – Applying Group Membership
+
+```
+newgrp wireshark
+```
+
+Applied the new group permissions in the current terminal session.
+
+
+## **Step 5: Verify Wireshark Installation**
+
+Screenshot 5 – Verifying Installation
+
+```
+wireshark --version
+```
+
+Verified that Wireshark 4.4.15 was successfully installed.
+
+
+
+
 
