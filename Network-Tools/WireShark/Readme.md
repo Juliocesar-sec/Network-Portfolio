@@ -141,7 +141,7 @@ Packet captures provide concrete, shareable evidence when escalating issues to s
 8. Save the capture file if documentation is needed
 
 ```
-**Common Use Cases**
+
 
 ## Common Use Cases
 
