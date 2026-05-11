@@ -64,6 +64,18 @@ Every captured packet can be expanded to reveal its full structure across protoc
 Wireshark provides a powerful filtering language to isolate exactly the traffic you need. Examples:
 
 
+## Display Filtering
+
+Wireshark provides a powerful filtering language to isolate exactly the traffic you need.
+
+| Filter | Purpose |
+|---|---|
+| `ip.addr == 192.168.1.1` | Show traffic to/from a specific IP |
+| `tcp.port == 80` | Show only HTTP traffic |
+| `dns` | Show only DNS queries and responses |
+| `http.request` | Show only HTTP requests |
+| `icmp` | Show only ping packets |
+
 
 
 
