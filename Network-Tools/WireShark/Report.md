@@ -57,7 +57,7 @@ wireshark --version
 Verified that Wireshark 4.4.15 was successfully installed.
 
 
-![Step 1](https://github.com/Juliocesar-sec/Network-Portfolio/blob/78a0051631f8675373576585329c5e69bae96c02/Network-Tools/WireShark/Screenshot/wireshark_2.png)
+![1Step 1](https://github.com/Juliocesar-sec/Network-Portfolio/blob/78a0051631f8675373576585329c5e69bae96c02/Network-Tools/WireShark/Screenshot/wireshark_2.png)
 
 ---
 
@@ -67,6 +67,7 @@ In this part of the lab, Wireshark is used to capture and analyze ARP (Address R
 
 ## Step 1: Retrieve your PC’s interface addresses. 
 
+For this lab, you will need to retrieve your PC’s IPv4 address and the MAC address. 
 
 ### ** 1A: Identify IP and MAC Address (Debian 13)**
 
@@ -86,4 +87,13 @@ MAC Address: xx:xx:xx:xx:xx:xx
 Interface: enp0s3 / wlan0 (depends on system)
 ```
 
+### 1B – Identify Active Network Interface
+Screenshot 27 – Active Network Interface
+
+Identified the active network interface being used to access the network.
+
+### 2C – Record IPv4 and MAC Address
+Screenshot 28 – IPv4 and MAC Address
+
+![2Step 1](https://github.com/Juliocesar-sec/Network-Portfolio/blob/fa8b82c2980a60d5258ecfea3dd005463502e3ab/Network-Tools/WireShark/Screenshot/wirewshark_3.png)
 
