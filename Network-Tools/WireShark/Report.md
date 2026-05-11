@@ -149,7 +149,44 @@ The successful replies confirmed network connectivity between the PC and the def
 
 During the ping process, Wireshark captured ARP request and ARP reply packets used to resolve the MAC address associated with the gateway’s IPv4 address.
 
-Suggested Screenshot:
-
 ![Step 2C](https://github.com/Juliocesar-sec/Network-Portfolio/blob/292f4370b54d4b21b595dd5d98c535505def45e9/Network-Tools/WireShark/Screenshot/wireshark_5.png)
+
+**2D — Ping Other PCs on the LAN**
+
+To generate additional ARP traffic, the IPv4 addresses of other PCs on the local network were pinged.
+
+Example command:
+
+```
+ping 192.168.1.x
+```
+
+Example Output:
+
+```
+PING 192.168.1.x (192.168.1.x) 56(84) bytes of data.
+64 bytes from 192.168.1.x: icmp_seq=1 ttl=64 time=1.2 ms
+64 bytes from 192.168.1.x: icmp_seq=2 ttl=64 time=1.0 ms
+64 bytes from 192.168.1.x: icmp_seq=3 ttl=64 time=1.1 ms
+```
+
+The successful replies confirmed connectivity between devices on the same LAN.
+
+**ARP Activity Observed**
+
+While the ping command was running, Wireshark captured additional ARP request and ARP reply packets between the local devices.
+
+These packets showed how the system resolved the IPv4 addresses of neighboring hosts into their corresponding MAC addresses before communication could occur.
+
+If a device did not respond to the ping requests, this was likely caused by firewall settings blocking ICMP traffic.
+
+**2E — Stop Packet Capture**
+
+After generating and analyzing the ARP traffic, packet capturing was stopped in Wireshark.
+
+This was done by clicking the Stop Capture button (red square icon) located on the Wireshark toolbar.
+
+Stopping the capture finalized the packet collection and preserved the captured ARP traffic for analysis.
+
+![Step 2D](https://github.com/Juliocesar-sec/Network-Portfolio/blob/553b1d13a3eba1fae1f1cd32ead7d4e1ac959665/Network-Tools/WireShark/Screenshot/wireshark_6.png)
 
