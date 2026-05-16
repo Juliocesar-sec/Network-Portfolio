@@ -54,11 +54,13 @@ Our vision is that good IT support should combine technical competence, communic
 
  ***Tools & Technologies***-
  Technologies and platforms commonly used in support and networking environments.
-- Cisco Packet Tracer
-- Google Workspace
+
 - Windows
 - Linux
-- Microsoft Office
+- AdGuar dHome
+- Pfsense
+- Virtual Box
+- Proxmox
 - Remote Desktop Tools
 
 #  Certifications
