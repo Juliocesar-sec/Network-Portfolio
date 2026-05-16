@@ -1,4 +1,4 @@
-# AdGuard-Integration
+<h2 align="center"># AdGuard-Integration</h2>
 
 ![AdGuardDashBoard](https://github.com/Juliocesar-sec/Network-Portfolio/blob/320c600ff7c201b878a72bec3d026bf6678b35f3/Network-level%20Integration/Screenshot/AdGuarHomeScreenshot_1.png)
 
