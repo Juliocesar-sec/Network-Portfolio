@@ -40,7 +40,7 @@ Our vision is that good IT support should combine technical competence, communic
 - Remote Support
 - Help Desk Support
 - Google Workspace Administration
-- 
+
 ***Networking***-
   Foundational networking knowledge applied to local networks, routing, switching, and connectivity troubleshooting.
 - Cisco Networking Fundamentals
