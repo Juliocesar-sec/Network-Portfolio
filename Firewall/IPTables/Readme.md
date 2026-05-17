@@ -1,5 +1,7 @@
 #  IPTABLES – Practical Guide 
 
+![iptables](https://img.shields.io/badge/iptables-Linux%20Firewall-blue?style=for-the-badge&logo=linux&logoColor=white)
+
 📌 **What is IPTABLES?**
 
 iptables is a small and powerful native firewall interface for Linux systems. It is intentionally low-level: not a graphical firewall manager, not a cloud security platform, and not a wrapper around another filtering engine. The main path is direct interaction with the Linux kernel Netfilter subsystem through explicit rule chains, packet filtering logic, and routing control.
