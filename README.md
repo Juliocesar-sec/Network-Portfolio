@@ -1,4 +1,4 @@
-## <h2 align="center">🌐 IT Support & Network Technician Portfolio</h2>
+# <h2 align="center">🌐 IT Support & Network Technician Portfolio</h2>
 
 ![Networking](https://img.shields.io/badge/Networking-Secure%20Traffic-blueviolet?style=for-the-badge&logo=cisco&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-System%20Security-black?style=for-the-badge&logo=linux&logoColor=white)
